@@ -26,7 +26,7 @@ body {
 
 .navbar {
     i {
-        display: none;
+        visibility: hidden;
     }
     display: flex;
     justify-content: space-around;
@@ -36,6 +36,7 @@ body {
     h3 {
         font-family: Heebo, sans-serif;
         font-size: 36px;
+        color: var(--gray1);
     }
 
     ul {
@@ -195,6 +196,7 @@ body {
         .front-end {
             width: 300px;
             margin-left: -20px;
+            margin-top: 22px;
 
             img {
                 background: var(--green);
@@ -460,4 +462,193 @@ footer {
     text-align: center;
     padding-bottom: 20px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar {
+        margin: 13px 17px 48px 10px;
+        justify-content: space-between;
+
+        i {
+            visibility: visible;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .header {
+        span, h1 {
+            margin-left: 40px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 24px;
+            width: 270px;
+            line-height: 36px;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 348px;
+            height: 145px;
+            border-radius: 18px;
+        }
+    }
+
+    .contact {
+        margin: 20px 0 0 40px;
+        width: 275px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        span {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 33px;
+        }
+
+        p {
+            font-size: 10px;
+            margin: 30px 0 0 0;
+        }
+
+        .email {
+            p {
+                font-size: 14px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .services {
+        margin: 100px 0 0 40px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+            width: 259px;
+        }
+
+        .cards {
+            flex-direction: column;
+            margin-left: 0px;
+
+            .back-end {
+                margin-left: -5px;
+            }
+        }
+    }
+
+    .good-business {
+        margin: 150px 0 48px 40px;
+
+        h3 {
+            font-size: 24px;
+            line-height: 36px;
+            width: 259px;
+        }
+
+        .examples {
+            flex-direction: column;
+
+            .smart-home-dashboard, .onboard-application, .booking-system, .juice-product-homepage {
+                img {
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 24px;
+                }
+
+                p {
+                    color: var(--gray3);
+                    font-size: 12px;
+                    margin-top: 20px;
+                }
+    
+                h4 {
+                    color: var(--gray1);
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .smart-home-dashboard {
+                margin: 50px 0 0 -20px;
+            }
+
+            .onboard-application {
+                margin: 30px 0 0 -20px;
+            }
+
+            .booking-system {
+                margin: 30px 0 0 -20px;
+            }
+
+            .juice-product-homepage {
+                margin: 30px 0 0 -20px;
+            }
+        }
+
+        button {
+            margin: 40px 0 0 -20px;
+            font-size: 18px;
+        }
+    }
+
+    .team {
+        margin: 100px 0 0 10px;
+        flex-direction: column;
+
+        .photos {
+            .a {
+                width: 178px;
+                margin: 100px 0 0 -5px;
+            }
+
+            .b {
+                width: 144px;
+                margin: 40px 0 0 -140px;
+            }
+
+            .c {
+                width: 162px;
+                margin: -100px 0 0 -140px;
+            }
+        }
+    }
+
+    .testimonial {
+        margin-left: 10px;
+
+        h4 {
+            font-size: 24px;
+            line-height: 36px;
+            width: 350px;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+
+        .navigation {
+            margin-left: 40px;
+        }
+
+        .social-media {
+            margin: 20px 0 0 40px;
+        }
+
+        .want {
+            margin: 50px 0 0 40px;
+        }
+    }
 }
